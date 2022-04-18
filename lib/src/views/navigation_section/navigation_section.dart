@@ -7,7 +7,7 @@ class NavigationSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red.withOpacity(0.3),
+      //color: Colors.red.withOpacity(0.3),
       height: 45 + 18,
       child: Row(
         children: [

@@ -8,11 +8,23 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: _appTheme,
       debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
 }
+
+final _appTheme = ThemeData(
+    primarySwatch: Colors.blue,
+    splashColor: Colors.transparent,
+    highlightColor: Colors.transparent,
+    scaffoldBackgroundColor: const Color(0xFF0A0A0B), // background color
+    tabBarTheme: const TabBarTheme(
+      indicator: BoxDecoration(
+          color: Colors.transparent
+      ),
+      unselectedLabelColor: Colors.white,
+      labelColor: Color(0xFF78FF86), // accent green color
+    )
+);

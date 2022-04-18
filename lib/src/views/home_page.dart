@@ -8,7 +8,6 @@ class HomePage extends StatelessWidget {
       initialIndex: 1,
       length: 4,
       child: Scaffold(
-        backgroundColor: Color(0xFF0A0A0B),
         body: ListView(
           children: [
             NavigationSection()
