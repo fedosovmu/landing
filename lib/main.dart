@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:landing/src/landing_app.dart';
+import 'package:landing/src/app.dart';
 
 void main() {
-  runApp(const LandingApp());
+  runApp(const App());
 }
