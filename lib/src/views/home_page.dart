@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:landing/src/views/custom_tab_bar.dart';
-import 'package:landing/src/views/logo.dart';
+import 'package:landing/src/views/navigation_section/navigation_section.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -12,25 +11,11 @@ class HomePage extends StatelessWidget {
         backgroundColor: Color(0xFF0A0A0B),
         body: ListView(
           children: [
-            _buildNavigationSection()
+            NavigationSection()
           ],
         ),
       ),
     );
   }
-
-  Widget _buildNavigationSection() {
-    return Container(
-      color: Colors.red,
-      height: 45 + 18,
-      child: Row(
-        children: [
-          Logo(),
-          Expanded(
-            child: CustomTabBar()
-          )
-        ],
-      ),
-    );
-  }
 }
+
